@@ -1,0 +1,5 @@
+value = input("Enter a string: ")
+length = len(value)
+print("The first character is: ", value[0])
+print("The last character is: ", value[-1])
+print("The middle character is: ", value[int(len(value)/2)])

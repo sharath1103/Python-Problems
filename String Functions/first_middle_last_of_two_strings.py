@@ -1,0 +1,7 @@
+s1 = input("Enter the word1: ")
+s2 = input("Enter the word2: ")
+length_word1 = len(s1)
+length_word2 = len(s2)
+middle1 = int(len(s1)/2)
+middle2 = int(len(s2)/2)
+print("The combined characters forming a word is: ", s1[0] + s2[0] + s1[middle1] + s2[middle2] + s1[length_word1-1] + s2[length_word2-1])

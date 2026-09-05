@@ -1,0 +1,5 @@
+sentence = input("Enter the sentence: ")
+lowered_sentence = sentence.lower()
+substring = input("Enter the substring: ")
+lowered_substring = substring.lower()
+print("The {} occurs {} times".format(substring,lowered_sentence.count(lowered_substring)))
