@@ -1,0 +1,12 @@
+lst = [1, [2, [3, 4], 5], 6, [7, 8]]
+def deep_flatten(lst):
+    result = []
+    for item in lst:
+        if isinstance(item, list):
+            result.extend(deep_flatten(item))
+        else:
+            result.append(item)
+    return result
+
+res = deep_flatten(lst)
+print(res)
